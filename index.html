@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Primož Kolman — spletni razvijalec in programer. Odkrijte moje projekte, veščine in izkušnje." />
+  <title>Primož Kolman — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Animated gradient background -->
+<div class="bg-canvas" aria-hidden="true"></div>
+
+<!-- ==================== Navigation ==================== -->
+<nav class="nav" role="navigation" aria-label="Glavna navigacija">
+  <a href="#hero" class="nav__logo">PK.</a>
+
+  <ul class="nav__links" id="nav-links">
+    <li><a href="#about">O meni</a></li>
+    <li><a href="#skills">Veščine</a></li>
+    <li><a href="#projects">Projekti</a></li>
+    <li><a href="#experience">Izkušnje</a></li>
+    <li><a href="#contact">Kontakt</a></li>
+  </ul>
+
+  <button class="nav__toggle" id="nav-toggle" aria-label="Odpri meni" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ==================== Hero ==================== -->
+<section id="hero">
+  <div class="container">
+    <div class="hero__content">
+      <p class="hero__greeting">&gt;_ zdravo, svet! 👋</p>
+
+      <h1 class="hero__name">
+        Sem <span class="gradient">Primož<br>Kolman</span>
+      </h1>
+
+      <p class="hero__role">
+        <span class="typed"></span>
+      </p>
+
+      <p class="hero__desc">
+        Strastni programer in spletni razvijalec iz Slovenije. Ustvarjam moderne,
+        hitre in estetsko privlačne spletne aplikacije z dobro izkušnjo za uporabnike.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">
+          🚀 Oglej si projekte
+        </a>
+        <a href="#contact" class="btn btn--outline">
+          ✉️ Pišite mi
+        </a>
+      </div>
+    </div>
+
+    <!-- Floating visual (desktop only) -->
+    <div class="hero__visual" aria-hidden="true">
+      <div class="hero__avatar">👨‍💻</div>
+      <div class="hero__stat-cards">
+        <div class="stat-card glass">
+          <span class="stat-card__icon">⚡</span>
+          <div class="stat-card__text">
+            <strong>3+</strong>
+            <span>leta izkušenj</span>
+          </div>
+        </div>
+        <div class="stat-card glass">
+          <span class="stat-card__icon">🎯</span>
+          <div class="stat-card__text">
+            <strong>10+</strong>
+            <span>dokončanih projektov</span>
+          </div>
+        </div>
+        <div class="stat-card glass">
+          <span class="stat-card__icon">🌐</span>
+          <div class="stat-card__text">
+            <strong>∞</strong>
+            <span>strast do kodiranja</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <span class="hero__scroll-line"></span>
+    <span>scroll</span>
+  </div>
+</section>
+
+<!-- ==================== About ==================== -->
+<section id="about">
+  <div class="container">
+    <div class="about__grid">
+
+      <!-- Image column -->
+      <div class="about__image-wrapper reveal-left">
+        <div class="about__image-box">
+          💻
+          <span class="about__badge about__badge--1">🇸🇮 Slovenija</span>
+          <span class="about__badge about__badge--2">🎓 Full-Stack</span>
+        </div>
+      </div>
+
+      <!-- Text column -->
+      <div class="about__text reveal-right">
+        <span class="section-tag">// o meni</span>
+        <h2 class="section-title">Strast do<br><span>tehnologije</span></h2>
+
+        <p>
+          Sem Primož Kolman, razvijalec iz Slovenije z globoko ljubeznijo do programiranja in
+          ustvarjanja digitalnih rešitev. Moja pot se je začela z radovednostjo — kaj pa, če bi
+          sam napisal program? Od takrat me je ta strast le še poglobila.
+        </p>
+        <p>
+          Specializiran sem za spletni razvoj, kjer združujem estetiko z zmogljivostjo. Rad
+          gradim projekte, ki so ne le funkcionalni, ampak tudi vizualno privlačni in intuitivni
+          za uporabo.
+        </p>
+        <p>
+          V prostem času eksperimentiram z novimi tehnologijami, berem dokumentacijo (resno 📖)
+          in prispevam k odprtokodnim projektom.
+        </p>
+
+        <div class="about__info-grid">
+          <div class="about__info-item glass">
+            <div class="label">Lokacija</div>
+            <div class="value">🇸🇮 Slovenija</div>
+          </div>
+          <div class="about__info-item glass">
+            <div class="label">Jeziki</div>
+            <div class="value">🗣 SLO, ENG</div>
+          </div>
+          <div class="about__info-item glass">
+            <div class="label">Status</div>
+            <div class="value">🟢 Na voljo</div>
+          </div>
+          <div class="about__info-item glass">
+            <div class="label">Fokus</div>
+            <div class="value">⚡ Web Dev</div>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn--primary">Povežimo se →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Skills ==================== -->
+<section id="skills">
+  <div class="container">
+    <div class="reveal" style="text-align:center; margin-bottom: 3.5rem;">
+      <span class="section-tag">// veščine</span>
+      <h2 class="section-title">Moje <span>orodje</span></h2>
+      <p class="section-subtitle" style="margin: 0 auto;">
+        Tehnologije in orodja, ki jih redno uporabljam pri razvoju projektov.
+      </p>
+    </div>
+
+    <div class="skills__layout">
+
+      <!-- Progress bars -->
+      <div class="skills__bars reveal-left">
+        <div>
+          <div class="skill-bar__header">
+            <span class="skill-bar__name">🌐 HTML &amp; CSS</span>
+            <span class="skill-bar__pct">92%</span>
+          </div>
+          <div class="skill-bar__track">
+            <div class="skill-bar__fill" data-pct="92"></div>
+          </div>
+        </div>
+        <div>
+          <div class="skill-bar__header">
+            <span class="skill-bar__name">✨ JavaScript</span>
+            <span class="skill-bar__pct">80%</span>
+          </div>
+          <div class="skill-bar__track">
+            <div class="skill-bar__fill" data-pct="80"></div>
+          </div>
+        </div>
+        <div>
+          <div class="skill-bar__header">
+            <span class="skill-bar__name">🐍 Python</span>
+            <span class="skill-bar__pct">78%</span>
+          </div>
+          <div class="skill-bar__track">
+            <div class="skill-bar__fill accent" data-pct="78"></div>
+          </div>
+        </div>
+        <div>
+          <div class="skill-bar__header">
+            <span class="skill-bar__name">⚛️ React</span>
+            <span class="skill-bar__pct">68%</span>
+          </div>
+          <div class="skill-bar__track">
+            <div class="skill-bar__fill" data-pct="68"></div>
+          </div>
+        </div>
+        <div>
+          <div class="skill-bar__header">
+            <span class="skill-bar__name">🟢 Node.js</span>
+            <span class="skill-bar__pct">65%</span>
+          </div>
+          <div class="skill-bar__track">
+            <div class="skill-bar__fill accent" data-pct="65"></div>
+          </div>
+        </div>
+        <div>
+          <div class="skill-bar__header">
+            <span class="skill-bar__name">🗄️ SQL / Baze podatkov</span>
+            <span class="skill-bar__pct">60%</span>
+          </div>
+          <div class="skill-bar__track">
+            <div class="skill-bar__fill coral" data-pct="60"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech chips -->
+      <div class="skills__cards reveal-stagger reveal-right">
+        <div class="tech-chip glass">
+          <div class="tech-chip__icon">🌐</div>
+          <div class="tech-chip__name">HTML5</div>
+        </div>
+        <div class="tech-chip glass">
+          <div class="tech-chip__icon">🎨</div>
+          <div class="tech-chip__name">CSS3</div>
+        </div>
+        <div class="tech-chip glass">
+          <div class="tech-chip__icon">✨</div>
+          <div class="tech-chip__name">JavaScript</div>
+        </div>
+        <div class="tech-chip glass">
+          <div class="tech-chip__icon">⚛️</div>
+          <div class="tech-chip__name">React</div>
+        </div>
+        <div class="tech-chip glass">
+          <div class="tech-chip__icon">💚</div>
+          <div class="tech-chip__name">Vue.js</div>
+        </div>
+        <div class="tech-chip glass">
+          <div class="tech-chip__icon">🐍</div>
+          <div class="tech-chip__name">Python</div>
+        </div>
+        <div class="tech-chip glass">
+          <div class="tech-chip__icon">🟢</div>
+          <div class="tech-chip__name">Node.js</div>
+        </div>
+        <div class="tech-chip glass">
+          <div class="tech-chip__icon">🐙</div>
+          <div class="tech-chip__name">Git</div>
+        </div>
+        <div class="tech-chip glass">
+          <div class="tech-chip__icon">🐳</div>
+          <div class="tech-chip__name">Docker</div>
+        </div>
+        <div class="tech-chip glass">
+          <div class="tech-chip__icon">🗄️</div>
+          <div class="tech-chip__name">SQL</div>
+        </div>
+        <div class="tech-chip glass">
+          <div class="tech-chip__icon">🐧</div>
+          <div class="tech-chip__name">Linux</div>
+        </div>
+        <div class="tech-chip glass">
+          <div class="tech-chip__icon">📦</div>
+          <div class="tech-chip__name">npm</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Projects ==================== -->
+<section id="projects">
+  <div class="container">
+    <div class="reveal" style="margin-bottom: 3.5rem;">
+      <span class="section-tag">// projekti</span>
+      <h2 class="section-title">Moja <span>dela</span></h2>
+      <p class="section-subtitle">
+        Izbor projektov, ki prikazujejo moje veščine in reševanje resničnih problemov.
+      </p>
+    </div>
+
+    <div class="projects__grid reveal-stagger">
+
+      <!-- Project 1 -->
+      <article class="project-card glass">
+        <div class="project-card__header purple">
+          <div class="project-card__year">2026</div>
+          <h3 class="project-card__title">Portfolio spletna stran</h3>
+          <span class="project-card__emoji">🌟</span>
+        </div>
+        <div class="project-card__body">
+          <p class="project-card__desc">
+            Moderna osebna portfolio stran z animacijami, glassmorphism dizajnom in
+            responzivnim layoutom — to, kar ravno berete!
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/Primoz008-sola/primoz008.website" class="project-link" target="_blank" rel="noopener">
+              🐙 GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card glass">
+        <div class="project-card__header coral">
+          <div class="project-card__year">2026</div>
+          <h3 class="project-card__title">Pimo Portfolio</h3>
+          <span class="project-card__emoji">🎨</span>
+        </div>
+        <div class="project-card__body">
+          <p class="project-card__desc">
+            Starejša verzija portfolio strani z elegantnim dizajnom. Zgrajena kot
+            eksperiment z gradientnimi ozadji in kartičnim layoutom.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/Primoz008-sola/PimoPortfolio" class="project-link" target="_blank" rel="noopener">
+              🐙 GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card glass">
+        <div class="project-card__header green">
+          <div class="project-card__year">2025</div>
+          <h3 class="project-card__title">One-AI Aplikacija</h3>
+          <span class="project-card__emoji">🤖</span>
+        </div>
+        <div class="project-card__body">
+          <p class="project-card__desc">
+            Aplikacija za analizo besedila s pomočjo umetne inteligence. Omogoča
+            hitro obdelavo in razumevanje naravnega jezika.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">Python</span>
+            <span class="tag">AI</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/Primoz008/One-AI" class="project-link" target="_blank" rel="noopener">
+              🐙 GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project-card glass">
+        <div class="project-card__header blue">
+          <div class="project-card__year">2024</div>
+          <h3 class="project-card__title">SPO2 — Pomnilniška beseda</h3>
+          <span class="project-card__emoji">💾</span>
+        </div>
+        <div class="project-card__body">
+          <p class="project-card__desc">
+            Šolski projekt pri predmetu SPO — interaktivna spletna stran o
+            pomnilniških besedah in računalniški arhitekturi.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/Primoz008-sola/WWW.SPO2_Pomnilniska-beseda" class="project-link" target="_blank" rel="noopener">
+              🐙 GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Experience / Timeline ==================== -->
+<section id="experience">
+  <div class="container">
+    <div class="reveal" style="margin-bottom: 3.5rem;">
+      <span class="section-tag">// izkušnje</span>
+      <h2 class="section-title">Moja <span>pot</span></h2>
+      <p class="section-subtitle">
+        Učenje, projekti in mejniki, ki so oblikovali moje znanje.
+      </p>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline__item">
+        <div class="timeline__dot">🌐</div>
+        <div class="timeline__content glass">
+          <div class="timeline__date">2026</div>
+          <div class="timeline__title">Portfolio in osebni projekti</div>
+          <div class="timeline__place">Samostojno</div>
+          <p class="timeline__desc">
+            Razvoj moderne portfolio strani z napredno CSS animacijo, glassmorphism
+            dizajnom in JavaScript interaktivnostjo.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__dot">🐍</div>
+        <div class="timeline__content glass">
+          <div class="timeline__date">2025 – 2026</div>
+          <div class="timeline__title">Python in AI razvoj</div>
+          <div class="timeline__place">GitHub / Samostojni projekti</div>
+          <p class="timeline__desc">
+            Razvoj One-AI aplikacije za analizo besedil z umetno inteligenco.
+            Poglobljeno učenje Pythona in strojnega učenja.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__dot">🏫</div>
+        <div class="timeline__content glass">
+          <div class="timeline__date">2023 – danes</div>
+          <div class="timeline__title">Šolsko izobraževanje</div>
+          <div class="timeline__place">Šola računalništva</div>
+          <p class="timeline__desc">
+            Formalno izobraževanje iz programiranja — Python, HTML, CSS in osnove
+            računalniške arhitekture ter omrežij.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__dot">⚡</div>
+        <div class="timeline__content glass">
+          <div class="timeline__date">2023</div>
+          <div class="timeline__title">Začetek programerske poti</div>
+          <div class="timeline__place">GitHub &amp; splet</div>
+          <p class="timeline__desc">
+            Prve vrstice kode v Pythonu in HTML-ju. Ustvarjanje prvih repozitorijev
+            na GitHubu in vstop v skupnost razvijalcev.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Contact ==================== -->
+<section id="contact">
+  <div class="container">
+    <div class="reveal" style="margin-bottom: 3.5rem;">
+      <span class="section-tag">// kontakt</span>
+      <h2 class="section-title">Stopite <span>v stik</span></h2>
+      <p class="section-subtitle">
+        Imam idejo za projekt? Pogovorimo se! Vedno rad slišim o novih priložnostih.
+      </p>
+    </div>
+
+    <div class="contact__layout">
+
+      <!-- Info column -->
+      <div class="contact__info reveal-left">
+        <h3>Pogovorimo se 💬</h3>
+        <p>
+          Ali imate projekt, ki ga je treba uresničiti, ali pa samo
+          pozdraviti? Moj nabiralnik je vedno odprt.
+        </p>
+
+        <div class="contact__items">
+          <div class="contact-item glass">
+            <div class="contact-item__icon">🐙</div>
+            <div class="contact-item__text">
+              <div class="label">GitHub</div>
+              <div class="value">
+                <a href="https://github.com/Primoz008-sola" target="_blank" rel="noopener">
+                  @Primoz008-sola
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-item glass">
+            <div class="contact-item__icon">🐙</div>
+            <div class="contact-item__text">
+              <div class="label">GitHub (osebni)</div>
+              <div class="value">
+                <a href="https://github.com/Primoz008" target="_blank" rel="noopener">
+                  @Primoz008
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-item glass">
+            <div class="contact-item__icon">🌐</div>
+            <div class="contact-item__text">
+              <div class="label">Lokacija</div>
+              <div class="value">🇸🇮 Slovenija</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form column -->
+      <div class="reveal-right">
+        <form class="contact__form glass" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Ime</label>
+              <input type="text" id="name" name="name" placeholder="Vaše ime" required />
+            </div>
+            <div class="form-group">
+              <label for="email">E-pošta</label>
+              <input type="email" id="email" name="email" placeholder="vas@email.si" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Zadeva</label>
+            <input type="text" id="subject" name="subject" placeholder="Zadeva sporočila" />
+          </div>
+          <div class="form-group">
+            <label for="message">Sporočilo</label>
+            <textarea id="message" name="message" placeholder="Vaše sporočilo…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary" style="width:100%; justify-content:center;">
+            ✉️ Pošlji sporočilo
+          </button>
+          <p id="form-message" style="margin-top: 1rem; text-align: center; min-height: 1.4rem;"></p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Footer ==================== -->
+<footer>
+  <div class="container">
+    <div class="footer__inner">
+      <span class="footer__logo">PK.</span>
+
+      <p class="footer__copy">
+        &copy; 2026 Primož Kolman &mdash; Narejeno z ❤️ in ☕
+      </p>
+
+      <div class="footer__socials">
+        <a href="https://github.com/Primoz008-sola" class="social-btn" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+        <a href="https://github.com/Primoz008" class="social-btn" target="_blank" rel="noopener" aria-label="GitHub osebni">💻</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
